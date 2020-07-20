@@ -13,6 +13,14 @@
 			cursor: pointer;
 		}
 
+		hr {
+			border: none;
+			display: block;
+			height: 3px;
+			border-radius: 5px;
+			background-color: #f1f1f1;
+		}
+
 		.d-flex img {
 			width: 200px;
 			height: 200px !important;
@@ -53,6 +61,10 @@
 			box-shadow: 0 0 0 0.2rem rgba(129, 211, 229, 0.356);
 			border-color: #81D2E5;
 		}
+
+		div > h5{
+			margin-left: 20px;
+		}
 	</style>
 </head>
 
@@ -86,7 +98,17 @@
 			<div class="col-12">
 				<p class="pl-2 pt-0 text-muted" id="num-results"></p>
 				<div class="text-xs-center mx-auto" id="pagination"></div>
-				<div class="d-flex flex-wrap align-items-start mt-5" id="img-results">
+				<div id="unsplash">	
+					<div class="d-flex flex-wrap align-items-start mb-5" id="img-results-unsplash">
+					</div>
+				</div>
+				<div id="pixabay">
+					<div class="d-flex flex-wrap align-items-start mb-5" id="img-results-pixabay">
+					</div>
+				</div>
+				<div id="pexels">
+					<div class="d-flex flex-wrap align-items-start mb-5" id="img-results-pexels">
+					</div>
 				</div>
 				<div class="text-xs-center mx-auto" style="margin-bottom: 100px !important;">
 					<ul class="pagination text-center mx-auto">
